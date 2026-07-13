@@ -128,8 +128,7 @@ def create_tools(db: Session, form_state: dict):
         
         return json.dumps({
             "status": "success",
-            "message": f"Interaction logged for {hcp_name}",
-            "form_state": form_state
+            "message": f"Interaction logged for {hcp_name}"
         })
 
     @tool
@@ -245,8 +244,7 @@ def create_tools(db: Session, form_state: dict):
         
         return json.dumps({
             "status": "success",
-            "message": f"Updated fields: {', '.join(changed_fields)}",
-            "form_state": form_state
+            "message": f"Updated fields: {', '.join(changed_fields)}"
         })
 
     @tool
@@ -295,8 +293,7 @@ def create_tools(db: Session, form_state: dict):
         return json.dumps({
             "status": "success",
             "suggestions": suggestion_text,
-            "auto_populated": auto_populate,
-            "form_state": form_state
+            "auto_populated": auto_populated
         })
 
     @tool
